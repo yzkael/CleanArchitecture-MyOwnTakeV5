@@ -1,4 +1,5 @@
 using Clean.Infrastructure;
+using Clean.Presentation.Middlewares;
 using Serilog;
 using Serilog.Configuration;
 using Serilog.Events;
@@ -19,7 +20,12 @@ try
 
     // Add services to the container.
     {
-        builder.Services.AddControllers();
+        builder.Services.AddControllers().AddNewtonsoftJson(options =>
+        {
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+        });
+        builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+        builder.Services.AddProblemDetails();
         builder.AddInfrastructure();
     }
 
@@ -28,10 +34,10 @@ try
     // Configure the HTTP request pipeline.
     {
 
+        app.UseExceptionHandler();
         app.UseHttpsRedirection();
         app.UseSerilogRequestLogging();
         app.UseAuthorization();
-
         app.MapControllers();
 
 

@@ -1,0 +1,19 @@
+2025-01-31 04:05:40.035 -04:00 [FTL] Application terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Diagnostics.IExceptionHandler Lifetime: Singleton ImplementationType: Clean.Presentation.Middlewares.GlobalExceptionHandler': Cannot consume scoped service 'Clean.Application.Services.ILoggerServices' from singleton 'Microsoft.AspNetCore.Diagnostics.IExceptionHandler'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Diagnostics.IExceptionHandler Lifetime: Singleton ImplementationType: Clean.Presentation.Middlewares.GlobalExceptionHandler': Cannot consume scoped service 'Clean.Application.Services.ILoggerServices' from singleton 'Microsoft.AspNetCore.Diagnostics.IExceptionHandler'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'Clean.Application.Services.ILoggerServices' from singleton 'Microsoft.AspNetCore.Diagnostics.IExceptionHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Presentation/Program.cs:line 32
+2025-01-31 04:05:40.105 -04:00 [INF] Closing and flushing logger

@@ -1,0 +1,12 @@
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/bin/Debug/net9.0/Clean.Domain.deps.json
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/bin/Debug/net9.0/Clean.Domain.dll
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/bin/Debug/net9.0/Clean.Domain.pdb
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.AssemblyInfoInputs.cache
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.AssemblyInfo.cs
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.csproj.CoreCompileInputs.cache
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.sourcelink.json
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.dll
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/refint/Clean.Domain.dll
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/Clean.Domain.pdb
+/home/ismael/Documents/GitHub/CleanArchitecture-MyOwnTakeV5/Clean.Domain/obj/Debug/net9.0/ref/Clean.Domain.dll

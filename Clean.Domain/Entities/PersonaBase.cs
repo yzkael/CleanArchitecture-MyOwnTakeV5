@@ -11,6 +11,6 @@ namespace Clean.Domain.Entities
         public string ApellidoPaterno { get; set; } = null!;
         public string ApellidoMaterno { get; set; } = null!;
         public string Carnet { get; set; } = null!;
-        public string Telefono { get; set; } = null!;
+        public string? Telefono { get; set; }
     }
 }
