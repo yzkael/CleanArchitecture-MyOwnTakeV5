@@ -13,13 +13,7 @@ namespace Clean.Infrastructure.Data.Configurations
         public void Configure(EntityTypeBuilder<Cargo> builder)
         {
             builder.ToTable("Cargo");
-            var sudoCargo = new Cargo
-            {
-                Id = "cargo-sudo",
-                Name = "Sudo",
-                NormalizedName = "Sudo"
-            };
-            builder.HasData(sudoCargo);
+
         }
     }
 }

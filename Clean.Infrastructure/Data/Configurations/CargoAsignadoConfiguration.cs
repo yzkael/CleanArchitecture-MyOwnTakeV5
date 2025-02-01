@@ -13,12 +13,6 @@ namespace Clean.Infrastructure.Data.Configurations
         public void Configure(EntityTypeBuilder<CargoAsignado> builder)
         {
             builder.ToTable("CargoAsignado");
-            var cargoAsignadoSudo = new CargoAsignado
-            {
-                RoleId = "cargo-sudo",
-                UserId = "sudo-user-id"
-            };
-            builder.HasData(cargoAsignadoSudo);
         }
     }
 }

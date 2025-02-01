@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Clean.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigrate2 : Migration
+    public partial class InitialMigrate3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -219,32 +219,32 @@ namespace Clean.Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "cargo-sudo", null, "Sudo", "Sudo" });
+                values: new object[] { "asdasdoqwkdpoqwdpokqwdkoqwdkpoqwodk", null, "Sudo", "SUDO" });
 
             migrationBuilder.InsertData(
                 table: "Personas",
                 columns: new[] { "Id", "ApellidoMaterno", "ApellidoPaterno", "Carnet", "Nombre", "Telefono" },
-                values: new object[] { 1, "Pedraza", "Moron", "12597382", "Ismael", "75526864" });
+                values: new object[] { 1, "sudoApMaterno", "sudoApPaterno", "123456", "sudoName", "123456" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PersonaId", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "sudo-user-id", 0, "1875030e-fa37-4b98-8c55-f181c8f1e00b", "ismaelmp997@hotmail.com", false, false, null, null, null, "AQAAAAIAAYagAAAAEF/bVnHVKizhgxWACS3m5aO241y4GLCYEU7B0z4ziog3nMILTvpl7UjYVYstYIkC7w==", 1, null, false, "70ffd507-78ed-4735-b1e2-49934872b828", false, "ismael" });
+                values: new object[] { "dk-2dk-2kd-012kd-012kd-012k0=12kd=dk12=dk12=0dk12=0k1d2=0k12d=012", 0, "e1f93e4d-af0a-49be-9c20-3b32a14e1d37", "sudo@hotmail.com", false, false, null, null, null, "AQAAAAIAAYagAAAAEEgzFNBCVICtHIqtSWDrYNTaSSE5EWNK2+NPVy+wB9h40cb/ACjpokMxV6x7WUTCVA==", 1, null, false, "0069fdda-f691-4cf4-b7fd-324d89679ec8", false, "sudo" });
 
             migrationBuilder.InsertData(
                 table: "Cargo",
                 column: "Id",
-                value: "cargo-sudo");
+                value: "asdasdoqwkdpoqwdpokqwdkoqwdkpoqwodk");
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "cargo-sudo", "sudo-user-id" });
+                values: new object[] { "asdasdoqwkdpoqwdpokqwdkoqwdkpoqwodk", "dk-2dk-2kd-012kd-012kd-012k0=12kd=dk12=dk12=0dk12=0k1d2=0k12d=012" });
 
             migrationBuilder.InsertData(
                 table: "CargoAsignado",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "cargo-sudo", "sudo-user-id" });
+                values: new object[] { "asdasdoqwkdpoqwdpokqwdkoqwdkpoqwodk", "dk-2dk-2kd-012kd-012kd-012k0=12kd=dk12=dk12=0dk12=0k1d2=0k12d=012" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

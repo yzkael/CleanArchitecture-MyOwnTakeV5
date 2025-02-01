@@ -60,11 +60,11 @@ namespace Clean.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            ApellidoMaterno = "Pedraza",
-                            ApellidoPaterno = "Moron",
-                            Carnet = "12597382",
-                            Nombre = "Ismael",
-                            Telefono = "75526864"
+                            ApellidoMaterno = "sudoApMaterno",
+                            ApellidoPaterno = "sudoApPaterno",
+                            Carnet = "123456",
+                            Nombre = "sudoName",
+                            Telefono = "123456"
                         });
                 });
 
@@ -140,18 +140,18 @@ namespace Clean.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "sudo-user-id",
+                            Id = "dk-2dk-2kd-012kd-012kd-012k0=12kd=dk12=dk12=0dk12=0k1d2=0k12d=012",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1875030e-fa37-4b98-8c55-f181c8f1e00b",
-                            Email = "ismaelmp997@hotmail.com",
+                            ConcurrencyStamp = "e1f93e4d-af0a-49be-9c20-3b32a14e1d37",
+                            Email = "sudo@hotmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEF/bVnHVKizhgxWACS3m5aO241y4GLCYEU7B0z4ziog3nMILTvpl7UjYVYstYIkC7w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEgzFNBCVICtHIqtSWDrYNTaSSE5EWNK2+NPVy+wB9h40cb/ACjpokMxV6x7WUTCVA==",
                             PersonaId = 1,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "70ffd507-78ed-4735-b1e2-49934872b828",
+                            SecurityStamp = "0069fdda-f691-4cf4-b7fd-324d89679ec8",
                             TwoFactorEnabled = false,
-                            UserName = "ismael"
+                            UserName = "sudo"
                         });
                 });
 
@@ -300,9 +300,9 @@ namespace Clean.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "cargo-sudo",
+                            Id = "asdasdoqwkdpoqwdpokqwdkoqwdkpoqwodk",
                             Name = "Sudo",
-                            NormalizedName = "Sudo"
+                            NormalizedName = "SUDO"
                         });
                 });
 
@@ -315,8 +315,8 @@ namespace Clean.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "sudo-user-id",
-                            RoleId = "cargo-sudo"
+                            UserId = "dk-2dk-2kd-012kd-012kd-012k0=12kd=dk12=dk12=0dk12=0k1d2=0k12d=012",
+                            RoleId = "asdasdoqwkdpoqwdpokqwdkoqwdkpoqwodk"
                         });
                 });
 

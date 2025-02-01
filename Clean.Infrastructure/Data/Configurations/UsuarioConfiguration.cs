@@ -17,16 +17,6 @@ namespace Clean.Infrastructure.Data.Configurations
             builder.HasOne(u => u.Persona)
                    .WithOne(p => p.Usuario)
                    .HasForeignKey<Usuario>(u => u.PersonaId);
-            var passwordHasher = new PasswordHasher<Usuario>();
-            var usuarioSudo = new Usuario
-            {
-                Id = "sudo-user-id",
-                UserName = "ismael",
-                PasswordHash = passwordHasher.HashPassword(null!, "123456"),
-                Email = "ismaelmp997@hotmail.com",
-                PersonaId = 1
-            };
-            builder.HasData(usuarioSudo);
         }
     }
 }
